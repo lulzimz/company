@@ -8,12 +8,9 @@
              <ul>
                  <li class="active"><a href="{{('/')}}">Home</a></li>
 
-                 <li><a href="">About</a></li>
-                 <li><a href="services.html">Services</a></li>
-                 <li><a href="">Portfolio</a></li>
-                 <li><a href="pricing.html">Pricing</a></li>
-                 <li><a href="blog.html">Blog</a></li>
-                 <li><a href="">Contact</a></li>
+                 <li><a href="{{route('about')}}">About</a></li>
+                 <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                 <li><a href="{{ route('contact') }}">Contact</a></li>
 
              </ul>
          </nav><!-- .nav-menu -->
