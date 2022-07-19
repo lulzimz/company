@@ -178,6 +178,24 @@ class BrandController extends Controller
         return Redirect()->back()->with($notification);
     }
 
+    public function deleteMultiImage($id)
+    {
+        $multi_img = multiImage::find($id);
+        $image = $multi_img->image;
+        //if file exist
+        if (Storage::exists(public_path($image))) {
+            unlink($image);
+        }
+        multiImage::find($id)->delete();
+
+        $notification = array(
+            'message' => 'Images Deleted Successfully',
+            'alert-type' => 'error'
+        );
+
+        return Redirect()->back()->with($notification);
+    }
+
     public function Logout()
     {
         Auth::logout();

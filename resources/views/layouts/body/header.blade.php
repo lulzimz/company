@@ -7,9 +7,8 @@
          <nav class="nav-menu d-none d-lg-block">
              <ul>
                  <li class="active"><a href="{{('/')}}">Home</a></li>
-
-                 <li><a href="{{route('about')}}">About</a></li>
-                 <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                 <li><a href="{{ route('MultiImage') }}">Images</a></li>
+                 <li><a href="{{ route('about') }}">About</a></li>
                  <li><a href="{{ route('contact') }}">Contact</a></li>
 
              </ul>

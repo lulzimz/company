@@ -8,29 +8,34 @@
       <div class="col-lg-3 col-md-6 footer-contact">
         <h3>Company</h3>
         <p>
-          Aaaa <br>
-          Ndsds<br>
-          KOSOVO <br><br>
-          <strong>Phone:</strong> +383<br>
-          <strong>Email:</strong> info@kosovo.com<br>
+          A108 Adam Street <br>
+          New York, NY 535022<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 5589 55488 55<br>
+          <strong>Email:</strong> info@example.com<br>
         </p>
       </div>
 
       <div class="col-lg-2 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{('/')}}">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{route('about')}}">About us</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Our Services</h4>
         <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('MultiImage') }}">Multi Images</a></li>
         </ul>
       </div>
 
       <div class="col-lg-4 col-md-6 footer-newsletter">
         <h4>Join Our Newsletter</h4>
-        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+        <p>Tamen quem nulla quae legam multos aute </p>
         <form action="" method="post">
           <input type="email" name="email"><input type="submit" value="Subscribe">
         </form>
@@ -47,8 +52,7 @@
       &copy; Copyright <strong><span>Company</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
-     
-      Designed by <a href="#">UBT</a>
+      Designed by <a href="https://www.ubt-uni.net/">UBT</a>
     </div>
   </div>
   <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -59,4 +63,5 @@
     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
   </div>
 </div>
-</footer><!-- End Footer -->
+</footer>
+<!-- End Footer -->

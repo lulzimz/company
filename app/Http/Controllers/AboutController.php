@@ -19,14 +19,8 @@ class AboutController extends Controller
         $about = HomeAbout::first();
         $users = User::all();
         $clients= Client::all();
-        return view('about', compact('about','users','clients'));
+        return view('pages.about', compact('about','users','clients'));
     }
-    
-
-
-
-
-
 
         //ADMIN
 
@@ -106,9 +100,9 @@ class AboutController extends Controller
         return Redirect()->back()->with($notification);
     }
 
-    public function Portfolio()
+    public function MultiImage()
     {
         $images = MultiImage::all();
-        return view('pages.portfolio', compact('images'));
+        return view('pages.multiimage', compact('images'));
     }
 }

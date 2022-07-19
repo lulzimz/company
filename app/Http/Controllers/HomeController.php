@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Slider;
 use Carbon\Carbon;
-use Faker\Core\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 
+
 class HomeController extends Controller
 {
-    //
+    //  SLIDER
     public function HomeSlider()
     {
         $sliders = Slider::latest()->get();
@@ -139,4 +139,6 @@ class HomeController extends Controller
 
         return Redirect()->back()->with($notification);
     }
+
+    
 }

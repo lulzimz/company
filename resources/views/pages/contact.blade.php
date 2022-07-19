@@ -33,19 +33,19 @@
                         <div class="col-lg-4 info">
                             <i class="icofont-google-map"></i>
                             <h4>Location:</h4>
-                            <p>{{$contact->address ?? 'null Value'}}</p>
+                            <p>{{$contact->address ?? 'None' }}</p>
                         </div>
 
                         <div class="col-lg-4 info mt-4 mt-lg-0">
                             <i class="icofont-envelope"></i>
                             <h4>Email:</h4>
-                            <p>{{$contact->email ?? 'null Value'}}</p>
+                            <p>{{$contact->email ?? 'None' }}</p>
                         </div>
 
                         <div class="col-lg-4 info mt-4 mt-lg-0">
                             <i class="icofont-phone"></i>
                             <h4>Call:</h4>
-                            <p>{{$contact->address ?? 'null Value'}}</p>
+                            <p>{{$contact->address ?? 'None' }}</p>
                         </div>
                     </div>
 
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" />
+                        <input type="text" class="form-control" name="subject" placeholder="Subject"/>
                     </div>
 
                     <div class="form-group">
