@@ -29,25 +29,25 @@
                         <div class="sub-menu">
 
                             <li class="active">
-                                <a class="sidenav-item-link" href="">
+                                <a class="sidenav-item-link" href="{{ route('slider') }}">
                                     <span class="nav-text">Slider</span>
 
                                 </a>
                             </li>
                             <li class="active">
-                                <a class="sidenav-item-link" href="">
+                                <a class="sidenav-item-link" href="{{ route('home.about') }}">
                                     <span class="nav-text">Home About</span>
 
                                 </a>
                             </li>
                             <li class="active">
-                                <a class="sidenav-item-link" href="">
+                                <a class="sidenav-item-link" href="{{ route('multi.image') }}">
                                     <span class="nav-text">Home Multi Images</span>
 
                                 </a>
                             </li>
                             <li class="active">
-                                <a class="sidenav-item-link" href="">
+                                <a class="sidenav-item-link" href="{{ route('brand') }}">
                                     <span class="nav-text">Home Brand</span>
 
                                 </a>
@@ -67,14 +67,14 @@
                         <div class="sub-menu">
 
                             <li class="active">
-                                <a class="sidenav-item-link" href="">
+                                <a class="sidenav-item-link" href="{{ route('adminContact') }}">
                                     <span class="nav-text">Contact Profile </span>
 
                                 </a>
                             </li>
 
                             <li class="active">
-                                <a class="sidenav-item-link" href="">
+                                <a class="sidenav-item-link" href="{{ route('adminContactMessage') }}">
                                     <span class="nav-text">Contact Message</span>
 
                                 </a>
@@ -94,7 +94,7 @@
                         <div class="sub-menu">
 
                             <li class="active">
-                                <a class="sidenav-item-link" href="">
+                                <a class="sidenav-item-link" href="{{ route('client') }}">
                                     <span class="nav-text">Clients </span>
 
                                 </a>
