@@ -8,6 +8,7 @@ use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RestController;
 use App\Models\MultiImage;
 use Illuminate\Support\Facades\DB;
 
@@ -137,7 +138,12 @@ Route::get('contact', [ContactController::class, 'Contact'])->name('contact');
 //Contact Message
 Route::post('contact/message', [ContactController::class, 'contactMessage'])->name('contactMessage');
 
-
+//Home Blog
+Route::get('/blog', [RestController::class, 'blogs'])->name('blog');
+Route::get('/blog/{id}', [RestController::class, 'showPost']);
+Route::post('/blog/{id}/comments', [RestController::class, 'addCommentToPost']);
+Route::get('/blog/category/{id}', [RestController::class, 'showCategory']);
+Route::get('/tags/{tag}', [RestController::class, 'showPostsByTag']);
 
 
 

@@ -23,6 +23,8 @@
     <!-- FAVICON -->
     <link href="{{asset('backend/assets/img/favicon.png')}}" rel="shortcut icon" />
 
+    <script src="{{asset('backend/assets/plugins/nprogress/nprogress.js')}}"></script>
+</head>
 
 <body class="sidebar-fixed sidebar-dark header-light header-fixed" id="body">
 

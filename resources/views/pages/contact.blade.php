@@ -1,6 +1,7 @@
 @extends('layouts.master_home')
-@section('home_content')
 
+@section('pageTitle', 'Contact')
+@section('home_content')
 
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
@@ -92,7 +93,5 @@
     </div>
 </section>
 <!-- End Contact Section -->
-
-
 
 @endsection

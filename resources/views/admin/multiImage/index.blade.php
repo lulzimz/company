@@ -6,13 +6,14 @@
 <div class="py-12">
     <div class="container">
         <div class="row">
+
             <div class="col-md-8">
                 <div class="card-group">
                     @foreach($images as $img)
                     <div class="col-md-4 mt-5">
-                    <a href="{{url('multiimage/deleteone/'.$img->id)}}" class="badge badge-danger" style="margin-left:auto ; border-radius:15px">-</a>
                         <div class="card">
-                            <img src="{{asset($img->image)}}" alt="">                        
+                            <img src="{{asset($img->image)}}" alt="">
+                            <a class="remove-image" href="{{url('multiimage/deleteone/'.$img->id)}}" style="display: inline;">&#215;</a>
                         </div>
                     </div>
                     @endforeach

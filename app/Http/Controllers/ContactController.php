@@ -97,6 +97,7 @@ class ContactController extends Controller
         return view('pages.contact', compact('contact'));
     }
 
+    //user message
     public function contactMessage(Request $req)
     {
 

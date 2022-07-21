@@ -1,4 +1,6 @@
 @extends('layouts.master_home')
+
+@section('pageTitle', 'Images')
 @section('home_content')
 
 

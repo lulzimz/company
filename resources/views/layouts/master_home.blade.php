@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Company UBT - Index</title>
+  <title>@yield('pageTitle') - Company</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -66,7 +66,9 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <script>
     @if(Session::has('message'))
+
     var type = "{{Session::get('alert-type','info')}}"
+
     switch (type) {
       case 'info':
         toastr.info("{{ Session::get('message') }}");
